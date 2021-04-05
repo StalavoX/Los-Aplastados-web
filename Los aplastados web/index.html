@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los aplastados web</title>
+    <meta name="description" content="Es un sitio web para la promocion de productos alimenticios">
+    
+    <!--preload-->
+
+    <!--precarga(preload) de los estilos o css-->
+
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!--precargar(preload) de las fuentes-->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,500&family=Ubuntu:ital,wght@0,500;1,300&display=swap"
+    crossorigin="crossorigin" as="font">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,500&family=Ubuntu:ital,wght@0,500;1,300&display=swap" rel="stylesheet">
+
+    
+</head>
+<body>
+
+    <!--encabezado de pag-->
+
+    <header class="header">
+        <div class="contenedor">
+            <div class="barra">
+            
+                <a class="logo" href="index.html">
+                    <h1 class="logo__nombre no-margin centrar-texto">LOS APLASTADOS</h1>
+                </a>
+            
+                <!--menu-->
+                <nav class="menu">
+                    <a href="nosotros.html" class="menu__enlace">Nosotros</a>
+                    <a href="productos.html" class="menu__enlace">Nuestros productos</a>
+                    <a href="contacto.html" class="menu__enlace">Contactenos</a>
+                </nav>
+            </div>
+        </div>
+        <!--Slogan o frase de batalla-->
+        <div class="header__texto">
+            <h2 class="no-margin">LOS APLASTADOS DE YONVANA</h2>
+            <p class="no-margin">Preparando delicias</p>
+
+        </div>
+    </header><!--fin encabezado-->
+
+        <div class="contenedor contenido-principal">
+            <main class="blog">
+                
+                <h3>SOBRE NOSOTROS</h3>
+                <!--articulos-->
+                <article class="entrada">
+                    <div class="entrada__imagen">
+                        <picture>
+                            <img src="images/pexels-caleb-oquendo-3023479.jpg" alt="imag1" loading="lazy">
+                        </picture>
+                    </div>
+
+                    <div class="entrada__contenido">
+                        <h4 class="no-margin">
+                            SOMOS
+                        </h4>
+                        <p>
+                            somos una empresa dedicada a la distribucion y preparacion de alimentos en el sector de comidas rapidas,
+                            tenemos una gran experiencia en este sector, contando con mas de 6 años en el mercado de nos el placer de atenderlo
+                            y dar gusto a su paladar.
+                        </p>
+
+                    </div>
+
+                </article>
+                <!--fin articulo 1-->
+
+                <!--articulo 2-->
+
+                <article class="entrada">
+                    <div class="entrada__imagen">
+                        <picture>
+                            <img src="images/Banner.jpg" alt="banner" loading="lazy">
+                        </picture>
+                    </div>
+
+                    <div class="entrada__contenido">
+                        <h4 class="no-margin">
+                         NUESTRA UBICACION
+                        </h4>
+                        <p>
+                            En este momento nos encontramos en una ubicacion cercana a la antigua via al mar contamos con todos los protocolos
+                            de bioseguridad para su tranquilidad y un espacio adecuado para sus necesidades y eventos.
+                        </p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.9023458793818!2d-75.61891480033782!3d6.276568727705347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2796f6b22cb17e96!2sLos%20aplastados%20de%20Yonvana!5e0!3m2!1sen!2sco!4v1617198932470!5m2!1sen!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+                    </div>
+
+                </article><!--fin articulo2-->
+
+                <!--articulo3-->
+
+                <article class="entrada">
+                    <div class="entrada__imagen">
+                        <picture>
+                            <img src="images/pexels-khaled-hossain-3028127.jpg" width="40%" alt="imag2" loading="lazy">
+                        </picture>
+                    </div>
+
+                    <div class="entrada__contenido">
+                        <h4 class="no-margin">
+                           SECTOR DE ENTREGAS A DOMICILIO
+                        </h4>
+                        <p>
+                            Tenemos tambien servicio de domicilios en el area de Robledo y sus alrededores cercanos asi que animate a deleitar 
+                            tu paladar con nuestros productos y tener el placer de ser aplastado por su rico y autentico sabor.
+                        </p>
+
+                    </div>
+
+                </article><!--fin articulo3-->               
+
+
+            </main>
+
+            <!--Sidebar-->
+            <aside class="sidebar">
+                <h3 class="centrar-texto">PRODUCTOS</h3>
+                <!--lista-->
+                <!--Producto1-->
+                 <ul class="productos">
+                     <li class="widget-producto">
+                         <h4 class="no-margin">HAMBURGUESA</h4>                        
+                         <p class="widget-producto__label">
+                             Precio:
+                             <span class="widget-producto__info">Varios</span>
+                             <img src="images/Hamburguesa.jpeg" width="80%"  alt="Menu hamburguesa">
+                         </p>
+                        
+                         <a href="productos.html" class="boton boton--productos">Más Información sobre nuestros productos</a>
+                     </li>
+                 </ul><!--fin Producto1-->
+
+                 <!--producto2-->
+                 <ul class="productos">
+                    <li class="widget-producto">
+                        <h4 class="no-margin">PATACONES</h4>
+                        <p class="widget-producto__label">
+                            Precio:
+                            <span class="widget-producto__info">Varios</span>
+                        </p>
+                        <img src="images/Patacones.jpeg" width="80%"  alt="Menu patacon">
+                        <a href="productos.html" class="boton boton--productos">Más Información sobre nuestros productos</a>
+                    </li>
+                </ul>
+                <!--fin producto2-->
+
+                <!--producto3-->
+                <ul class="productos">
+                    <li class="widget-producto">
+                        <h4 class="no-margin">PICADAS</h4>
+                        <p class="widget-producto__label">
+                            Precio:
+                            <span class="widget-producto__info">Varios</span>
+                        </p>
+                    <img src="images/Picadas.jpeg" width="80%"  alt="Menu picadas">
+                        <a href="productos.html" class="boton boton--productos">Más Información sobre nuestros productos</a>
+                    </li>
+                </ul>
+                <!--fin producto3-->
+
+                 <!--producto4-->
+                 <ul class="productos">
+                    <li class="widget-producto">
+                        <h4 class="no-margin">PERROS</h4>
+                        <p class="widget-producto__label">
+                            Precio:
+                            <span class="widget-producto__info">Varios</span>
+                        </p>
+                    <img src="images/Perros.jpeg" width="80%" alt="Menu perros">
+                        <a href="productos.html" class="boton boton--productos">Más Información sobre nuestros productos</a>
+                    </li>
+                </ul>
+                <!--fin producto4-->
+            </aside>
+        </div>
+
+        <!--pie de pagina-->
+
+        <footer class="footer">
+            <div class="contenedor">
+                <div class="barra">
+    
+                    <a class="logo" href="index.html">
+                        <h1 class="logo__nombre no-margin centrar-texto">LOS APLASTADOS</h1>
+                    </a>
+                    
+                    <!--menu-->
+                    <nav class="menu">
+                        <a href="nosotros.html" class="menu__enlace">Nosotros</a>
+                        <a href="productos.html" class="menu__enlace">productos</a>
+                        <a href="contacto.html" class="menu__enlace">Contacto</a>
+                    </nav>
+                </div>
+            </div>   
+
+        </footer>    
+
+    
+    <script src="js/modernizr.js"></script>
+</body>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyAkgKW0bk2kSTC8AfTq3bSqnmH2_NR63Kw",
+    authDomain: "los-aplastados.firebaseapp.com",
+    projectId: "los-aplastados",
+    storageBucket: "los-aplastados.appspot.com",
+    messagingSenderId: "711391241774",
+    appId: "1:711391241774:web:bfdea957445191f953a1bf",
+    measurementId: "G-FX8DJQ4ZXF"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+</html>

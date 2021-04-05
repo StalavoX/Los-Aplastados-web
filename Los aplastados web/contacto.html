@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los aplastados Contacto</title>
+    <meta name="description" content="Es un sitio web para la promocion de productos alimenticios">
+
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!--precargar(preload) de las fuentes-->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,500&family=Ubuntu:ital,wght@0,500;1,300&display=swap"
+    crossorigin="crossorigin" as="font">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,500&family=Ubuntu:ital,wght@0,500;1,300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!--encabezado de pag-->
+
+    <header class="header">
+        <div class="contenedor">
+            <div class="barra">
+
+                <a class="logo" href="index.html">
+                    <h1 class="logo__nombre no-margin centrar-texto">LOS APLASTADOS</h1>
+                </a>
+                
+                <!--menu-->
+                <nav class="menu">
+                    <a href="nosotros.html" class="menu__enlace">Nosotros</a>
+                    <a href="Productos.html" class="menu__enlace">Productos</a>
+                    <a href="contacto.html" class="menu__enlace">Contacto</a>
+                </nav>
+            </div>
+        </div>
+
+        <!--Slogan o frase de batalla-->
+        <div class="header__texto">
+            <h2 class="no-margin">LOS APLASTADOS DE YONVANA</h2>
+            <p class="no-margin">Preparando delicias</p>
+
+        </div>
+    </header><!--fin encabezado-->
+
+        
+            <main class="contenedor">
+                
+                <h3 class="centrar-texto">Contacto</h3>
+                
+                <!--formulario de contacto-->
+               <form action="" method="POST" class="formulario">
+                   <div class="campo">
+                       <label for="nombre" class="campo__label">Nombre</label>
+                       <input class="campo__field" type="text" placeholder="Escribir nombre" required>
+                   </div>
+
+                   <div class="campo">
+                    <label for="apellido" class="campo__label">Apellido</label>
+                    <input class="campo__field" type="text" placeholder="Escribir apellido" required>
+                  </div>
+
+                <div class="campo">
+                    <label for="email" class="campo__label">Email</label>
+                    <input class="campo__field" type="email" placeholder="Escribir email" required>
+                </div>
+
+                <div class="campo">
+                    <label for="barrio" class="campo__label">Barrio</label>
+                    <select name="barrio" id="" class="campo__field" required>
+                        <option value="">Seleccionar</option>
+                        <option value="">Las margaritas</option>
+                        <option value="">Aures</option>
+                        <option value="">Fuente clara</option>
+                        <option value="">Aures 2</option>
+                        <option value="">Villa flora</option>
+                        <option value="">Bello Horizonte</option>
+                        <option value="">Civitón</option>
+                        <option value="">La aurora</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="direccion" class="campo__label">Dirección</label>
+                    <input class="campo__field" type="text" placeholder="Escribir dirección" required>
+                </div>
+
+                <div class="campo">
+                    <label for="telefono" class="campo__label">Teléfono</label>
+                    <input class="campo__field" type="tel" placeholder="Escribir teléfono" required>
+                </div>
+
+                <div class="campo">
+                    <label for="mensaje" class="campo__label">Mensaje</label>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Escribir mensaje"></textarea>
+                </div>
+
+                <div class="campo">
+                   
+                    <input class="boton" type="submit" placeholder="Escribir email" value="Enviar">
+                </div>
+
+               </form>
+
+            </main>
+
+            
+        <!--pie de pagina-->
+
+        <footer class="footer">
+            <div class="contenedor">
+                <div class="barra">
+    
+                    <a class="logo" href="index.html">
+                        <h1 class="logo__nombre no-margin centrar-texto">LOS APLASTADOS</h1>
+                    </a>
+                    
+                    <!--menu-->
+                    <nav class="menu">
+                        <a href="nosotros.html" class="menu__enlace">Nosotros</a>
+                        <a href="Productos.html" class="menu__enlace">Productos</a>
+                        <a href="contacto.html" class="menu__enlace">Contacto</a>
+                    </nav>
+                </div>
+            </div>   
+
+        </footer>    
+
+    
+    <script src="js/modernizr.js"></script>
+</body>
+</html>

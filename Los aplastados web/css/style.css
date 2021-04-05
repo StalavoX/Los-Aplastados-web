@@ -1,0 +1,302 @@
+/*estilos generales*/
+
+/* crear las vbles para los titulos, colores y botones*/
+:root{
+    --fuenteTitulo:'Ubuntu', sans-serif;
+    --fuenteParrafo:'Roboto', sans-serif;
+
+    --colorTitulo:rgb(253, 253, 253);
+    --colorsubtitulo: rgb(7, 5, 173);
+    --colorParrafo:#000;
+    --colorFooter:rgb(46, 66, 247);
+    --colorBorde:rgb(51, 88, 118);
+    --colorBoton:rgb(34, 31, 199);
+
+
+}
+
+/*el html si o si debe ir con la siguiente configuración
+para poder utilizar el padding*/
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: var(--fuenteParrafo);
+    font-size: 1.6rem; /*son 16px */
+    line-height: 2;
+}
+
+.contenedor{
+    margin: 0 auto;
+    width: min(90%, 120rem);
+}
+
+
+a{
+    text-decoration: none;
+}
+
+h1,h2,h3,h4{
+    font-family: var(--fuenteTitulo);
+    line-height: 1.2;    
+    text-align: center;
+    margin-top: 1rem;
+    color: var(--colorsubtitulo);
+}
+
+h1{
+    font-size: 3rem;
+    color:#fff;
+}
+
+h2{
+    font-size: 2.5rem;
+}
+
+h3{
+    font-size: 3rem;
+}
+
+h4{
+    font-size: 2rem;
+    font-family: var(--fuenteTitulo);
+
+}
+
+img{
+    max-width: 100%;
+}
+
+.no-margin{
+    margin: 0;
+}
+
+.no-padding{
+    padding: 0;
+}
+
+.centrar-texto{
+    text-align: center;
+}
+
+.p{
+    text-align: justify;
+}
+/*encabezado o header*/
+
+/*formato para imagen webp, si el navegador lo detecta*/
+
+.webp .header{
+    background-image: url(../images/Banner.jpg);
+}
+
+/*formato para imagen webp, si el navegador no lo detecta*/
+
+.no-webp .header{
+    background-image: url(../images/Banner.jpg);
+}
+
+.header{
+    background-image: url(../images/pexels-robin-stickel-70497.jpg);/*imagen de fondo*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 25rem;
+
+}
+
+.header__texto{
+    text-align: center;/*para centrar texto*/
+    color: var(--colorTitulo);
+    margin-top: 2rem;
+
+}
+
+/*aplicar responsive*/
+@media (min-width: 768px){
+    .header__texto{     
+        margin-top: 4rem;
+        color: var(--colorTitulo);
+    
+    }
+}
+
+@media (min-width: 768px){
+    .barra{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
+
+/*menu*/
+@media (min-width: 768px){
+    .menu{
+        display: flex;
+        gap: 2rem;
+    }
+}
+
+.menu__enlace{
+    display: block;
+    text-align: center;
+    font-size: 1.3rem;
+    color:var(--colorTitulo);
+    font-weight: bold;
+}
+
+.menu__contacto{
+    display: block;
+    text-align: left;
+    font-size: 2.3rem;
+    color:var(--colorsubtitulo);
+    
+}
+
+
+/*contenido*/
+
+@media (min-width: 768px){
+    .contenido-principal{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+
+    }
+
+}
+
+.blog{
+    padding: 1.8rem;
+}
+
+.entrada{
+    border-bottom: 1px solid var(--colorBorde);
+    margin-bottom: 2rem;
+}
+
+/*quitar borde al ultimo articulo*/
+.entrada:last-of-type{
+    border: none;
+    margin-bottom: 0;
+}
+
+.boton{
+    font-family: var(--fuenteParrafo);
+    color:var(--colorTitulo);
+    background-color: rgb(0, 140, 255);
+    border-radius: 0.5rem;
+    font-size: 1.8rem;
+    margin-bottom: 1.8rem;
+    font-weight: 100;
+    cursor: pointer;
+    /*punterodelmouse*/text-align: center;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+}
+.boton--producto{
+    background-color: rgb(255, 255, 255);
+    color: var(--colorTitulo);
+
+}
+
+
+@media (min-width: 768px){
+    .boton{
+        display: inline-block;
+
+    }
+}
+
+/*productos*/
+.productos{
+    list-style: none;/*quita las viñetas*/
+}
+
+.widget-producto{
+    border-bottom: 1px dotted var(--colorBorde);
+    margin-bottom: 2.5rem;
+}
+
+.widget-producto__label{
+    font-family: var(--fuenteTitulo);
+    font-weight: bold;
+}
+
+.widget-producto__info{
+    font-weight: normal;
+}
+
+
+/*footer*/
+.footer{
+    background-color: var(--colorFooter);
+    padding: 2.5rem;
+    margin-top: 5rem;
+}
+
+/*contacto*/
+
+.formulario{
+    background-color: rgb(212, 239, 250);
+    width: 95%;
+    padding: 5rem;
+    border-radius: 2rem;
+}
+
+.campo{
+    display: flex;
+    margin-bottom: 1.5rem;
+}
+
+.campo__label{
+    flex: 0 0 9rem;
+    text-align: right;
+    padding-right: 1rem;
+}
+
+.campo__field{
+    flex: .5;      
+
+}
+
+/*nosotros*/
+/*responsive*/
+@media (min-width: 768px){
+    .sobre-nosotros{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 2rem;
+    }
+}
+
+/*actualizar productos*/
+
+.producto{
+    border-bottom: 1px dotted var(--colorBorde);
+    padding: 2rem;
+
+}
+
+/*responsive*/
+@media (min-width: 768px){
+    .producto{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem;
+    }
+}
+
+
+
+
+
+
+
